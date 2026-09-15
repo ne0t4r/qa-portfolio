@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Zadanie27">
+   <test verbose="2" preserve-order="true" name="D:\My documents\ITvKurze\SWTesting\GIT_Repository\ATP_Stefanovic\neprojektove-ulohy\Lekcia27\zadanie_27.3.1">
+       <groups>
+           <run>
+               <include name="Uloha A"/>
+               <include name="Uloha B"/>
+               <include name="Uloha C"/>
+           </run>
+       </groups>
+
+        <classes>
+            <class name="zadanie.zadanie"/>
+        </classes>
+
+    </test>
+</suite>

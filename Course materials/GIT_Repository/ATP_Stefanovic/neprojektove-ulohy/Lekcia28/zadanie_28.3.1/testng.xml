@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="org.example">
+    <test verbose="2" preserve-order="true" name="D:\My documents\ITvKurze\SWTesting\GIT_Repository\ATP_Stefanovic\neprojektove-ulohy\Lekcia28\zadanie_28.3.1">
+            <parameter name="fullName" value="Lukas" />
+            <parameter name="band" value="Marika Gombitová" />
+            <parameter name="actor" value="Danny DeVito" />
+            <parameter name="actor2" value="Peter Dinklage" />
+        <classes>
+            <class name="org.example.UlohaA"/>
+            <class name="org.example.UlohaB"/>
+            <class name="org.example.UlohaC"/>
+        </classes>
+    </test>
+</suite>

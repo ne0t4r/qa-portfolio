@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="org.example">
+    <test verbose="2" preserve-order="true" name="D:\My documents\ITvKurze\SWTesting\GIT_Repository\ATP_Stefanovic\neprojektove-ulohy\Lekcia29\zadanie_29.3.1">
+
+        <classes>
+            <class name="org.example.UlohaB"/>
+            <class name="org.example.UlohaC"/>
+        </classes>
+    </test>
+</suite>

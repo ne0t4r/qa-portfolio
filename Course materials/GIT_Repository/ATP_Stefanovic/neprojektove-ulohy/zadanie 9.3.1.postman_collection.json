@@ -1,0 +1,2124 @@
+{
+	"info": {
+		"_postman_id": "77f74f3a-dd2c-47db-9db9-ff0b6cfbcf73",
+		"name": "zadanie 9.3.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31068340"
+	},
+	"item": [
+		{
+			"name": "A",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let emailShow = pm.response.json();\r",
+							"for (let i = 0; i < emailShow.length; i++) {\r",
+							"    console.log(emailShow[i].email);\r",
+							"}\r",
+							"\r",
+							"let phone = pm.response.json();\r",
+							"for (let i = 0; i < phone.length; i++) {\r",
+							"    console.log(phone[i].phone);\r",
+							"}\r",
+							"\r",
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"EMAIL\", function() {\r",
+							"    for (let i = 0; i < jsonData.length; i++) {\r",
+							"        pm.expect(jsonData[i].email).to.exist;\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"PHONE\", function() {\r",
+							"    for (let i = 0; i < jsonData.length; i++) {\r",
+							"        pm.expect(jsonData[i].phone).to.exist;\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"FRUITS\", function() {\r",
+							"    for (let i = 0; i < jsonData.length; i++) {\r",
+							"        pm.expect(jsonData[i].favoriteFruit).to.exist;\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The length of the number is 11 digits\", function() {\r",
+							"    let phoneNumberWithCharacters = \"12a34b56c78-901\";\r",
+							"    let numericCharacters = phoneNumberWithCharacters.match(/\\d/g);\r",
+							"    pm.expect(numericCharacters.length).to.eql(11);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/b90d5f09-c7f0-4dba-98cf-24c95fd1bebb",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"b90d5f09-c7f0-4dba-98cf-24c95fd1bebb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B Registracia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"username\": \"Lukas1\",\r\n        \"email\": \"lukas1@metis.sk\",\r\n        \"password\": \"12345\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();\r",
+							" \r",
+							"pm.collectionVariables.set(\"slugb1\", res.article.slug);\r",
+							"\r",
+							"pm.test('Article num1 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"function shuffle(array) {\r",
+							"    for (let i = array.length - 1; i > 0; i--) {\r",
+							"        const j = Math.floor(Math.random() * (i + 1));\r",
+							"        [array[i], array[j]] = [array[j], array[i]];\r",
+							"    }\r",
+							"}\r",
+							"\r",
+							"shuffle(randomOrder);\r",
+							"\r",
+							"for (const request of randomOrder) {\r",
+							"    postman.setNextRequest(request);\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B1\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Article num2 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json();\r",
+							"pm.collectionVariables.set(\"slugb2\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B2\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Article num3 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb3\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B3\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Article num4 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb4\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B4\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Article num5 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb5\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B5\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Article num6 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb6\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B6\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							" pm.test('Article num7 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb7\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B7\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Article num8 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb8\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B8\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							" pm.test('Article num9 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb9\", res.article.slug);\r",
+							"\r",
+							"const randomOrder = [\"B1 článok 2\", \"B1 článok 3\", \"B1 článok 4\", \"B1 článok 5\", \"B1 článok 6\", \"B1 článok 7\", \"B1 článok 8\", \"B1 článok 9\", \"B1 článok 10\"];\r",
+							"postman.setNextRequest(_.sample(randomOrder));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B9\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B1 článok 10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							" pm.test('Article num10 succesfull added', function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.json().article).to.have.property('slug');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('title');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('description');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('body');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('createdAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('updatedAt');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('tagList');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favorited');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('favoritesCount');\r",
+							"    pm.expect(pm.response.json().article).to.have.property('author');\r",
+							"});\r",
+							"\r",
+							"let res = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"slugb10\", res.article.slug);\r",
+							"\r",
+							"postman.setNextRequest(\"B Settings\");"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha B10\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B Settings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"image\": \"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/05/the-matrix-code-keanu-reeves.jpeg?q=50&fit=contain&w=1140&h=&dpr=1.5\",\r\n        \"username\": \"Lukas2\",\r\n        \"bio\": \"BIOLIT\",\r\n        \"email\": \"lukas1@metis.sk\",\r\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJsdWthczEiLCJleHAiOjE3MDU0NzM0MzQsImlhdCI6MTcwMDI4OTQzNH0._dQBEWmY5LEBkTXYvktpP3nx2eOPw8AzTityasBSwTc\",\r\n        \"effectiveImage\": \"https://static.productionready.io/images/smiley-cyrus.jpg\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B overenie settings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Username was succesfully changed', function () {\r",
+							"    let data = pm.response.json();\r",
+							"    pm.expect(data.profile.username).to.equal('lukas2');\r",
+							"})\r",
+							" \r",
+							"pm.test('BIO was succesfully changed', function () {\r",
+							"    let data = pm.response.json();\r",
+							"    pm.expect(data.profile.bio).to.equal('BIOLIT');\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/profiles/lukas2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"profiles",
+						"lukas2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B Oblubeny clanok",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const favorite = true;\r",
+							"\r",
+							"pm.test(\"Value is true\", function () {\r",
+							"    if (favorite === true) {\r",
+							"        console.log(\"Value is true.\");\r",
+							"    } else {\r",
+							"        console.log(\"Value isn't true.\");\r",
+							"        pm.expect(favorite).to.be.true;\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{B}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slugb1}}/favorite",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slugb1}}",
+						"favorite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C Registracia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is succesfully edited', function () {\r",
+							"\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"username\": \"Luke\",\r\n        \"email\": \"luke@metis.sk\",\r\n        \"password\": \"12345\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C zmena profilu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"image\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.veselerozpravky.sk%2Ftom-a-jerry%2F&psig=AOvVaw0S4SUe7QbY2BAJWRy8VcSP&ust=1700348282564000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPDQwYyRzIIDFQAAAAAdAAAAABAE\",\r\n        \"username\": \"Luke007\",\r\n        \"bio\": \"TEST\",\r\n        \"email\": \"luke123@test.sk\",\r\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJsdWtlIiwiZXhwIjoxNzA1NDQ1NDk2LCJpYXQiOjE3MDAyNjE0OTZ9.uYGle4EdCXuYiO8vtW4PspZQpZczb4JGZ7i0QVYQH2o\",\r\n        \"effectiveImage\": \"https://static.productionready.io/images/smiley-cyrus.jpg\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C článok 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();\r",
+							" \r",
+							"pm.collectionVariables.set(\"slug1\", res.article.slug);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha C\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C overenie článok 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is correct added', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha C\")\r",
+							"pm.expect(res.article.description).eq(\"test\")\r",
+							"pm.expect(res.article.body).eq(\"test\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"test\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug1}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C uprava clanok 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is succesfully edited', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha Cedit1\")\r",
+							"pm.expect(res.article.description).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.body).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"testEDIT\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha Cedit1\",\r\n        \"description\": \"testEDIT\",\r\n        \"body\": \"testEDIT\",\r\n        \"tagList\": [\r\n            \"testEDIT\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug1}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C zmazanie clanku 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Article removed\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug1}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C článok 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();\r",
+							" \r",
+							"pm.collectionVariables.set(\"slug2\", res.article.slug);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha C2\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C overenie článok 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is correct added', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha C2\")\r",
+							"pm.expect(res.article.description).eq(\"test\")\r",
+							"pm.expect(res.article.body).eq(\"test\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"test\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug2}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C uprava clanok 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is succesfully edited', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha Cedit2\")\r",
+							"pm.expect(res.article.description).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.body).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"testEDIT\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha Cedit2\",\r\n        \"description\": \"testEDIT\",\r\n        \"body\": \"testEDIT\",\r\n        \"tagList\": [\r\n            \"testEDIT\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug2}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C zmazanie clanku 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Article removed\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug2}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C článok 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();\r",
+							" \r",
+							"pm.collectionVariables.set(\"slug3\", res.article.slug);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha C3\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C overenie článok 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is correct added', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha C3\")\r",
+							"pm.expect(res.article.description).eq(\"test\")\r",
+							"pm.expect(res.article.body).eq(\"test\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"test\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug3}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug3}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C uprava clanok 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is succesfully edited', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha Cedit3\")\r",
+							"pm.expect(res.article.description).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.body).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"testEDIT\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha Cedit3\",\r\n        \"description\": \"testEDIT\",\r\n        \"body\": \"testEDIT\",\r\n        \"tagList\": [\r\n            \"testEDIT\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug3}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug3}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C zmazanie clanku 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Article removed\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug3}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug3}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C článok 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();\r",
+							" \r",
+							"pm.collectionVariables.set(\"slug4\", res.article.slug);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha C4\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C overenie článok 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is correct added', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha C4\")\r",
+							"pm.expect(res.article.description).eq(\"test\")\r",
+							"pm.expect(res.article.body).eq(\"test\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"test\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug4}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug4}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C uprava clanok 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is succesfully edited', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha Cedit4\")\r",
+							"pm.expect(res.article.description).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.body).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"testEDIT\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha Cedit4\",\r\n        \"description\": \"testEDIT\",\r\n        \"body\": \"testEDIT\",\r\n        \"tagList\": [\r\n            \"testEDIT\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug4}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug4}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C zmazanie clanku 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Article removed\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug4}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug4}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C článok 5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();\r",
+							" \r",
+							"pm.collectionVariables.set(\"slug5\", res.article.slug);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha C5\",\r\n        \"description\": \"test\",\r\n        \"body\": \"test\",\r\n        \"tagList\": [\r\n            \"test\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C overenie článok 5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is correct added', function () {\r",
+							"\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha C5\")\r",
+							"pm.expect(res.article.description).eq(\"test\")\r",
+							"pm.expect(res.article.body).eq(\"test\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"test\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug5}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug5}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C uprava clanok 5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json()\r",
+							"pm.test('Article is succesfully edited', function () {\r",
+							" \r",
+							"pm.expect(res.article.title).eq(\"Clanok uloha Cedit5\")\r",
+							"pm.expect(res.article.description).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.body).eq(\"testEDIT\")\r",
+							"pm.expect(res.article.tagList[0]).eq(\"testEDIT\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"article\": {\r\n        \"title\": \"Clanok uloha Cedit5\",\r\n        \"description\": \"testEDIT\",\r\n        \"body\": \"testEDIT\",\r\n        \"tagList\": [\r\n            \"testEDIT\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug5}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug5}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C zmazanie clanku 5 + vyscistenie variables",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Article removed\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Cleanup Variables\", function () {\r",
+							" \r",
+							"    const variablesToDelete = [\"slug1\", \"slug2\", \"slug3\", \r",
+							"    \"slug4\", \"slug5\", \"slugb1\",\"slugb2\",\"slugb3\", \"slugb4\",\r",
+							"    \"slugb5\",\"slugb6\",\"slugb7\",\"slugb8\",\"slugb9\", \"slugb10\"];\r",
+							"  \r",
+							"    variablesToDelete.forEach(variable => {\r",
+							"        pm.environment.unset(variable);\r",
+							"    });\r",
+							"   \r",
+							"    console.log(\"Cleanup: Variables deleted - \", variablesToDelete);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{C}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articles/{{slug5}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articles",
+						"{{slug5}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "C",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJsdWtlIiwiZXhwIjoxNzA1NDQ1NDk2LCJpYXQiOjE3MDAyNjE0OTZ9.uYGle4EdCXuYiO8vtW4PspZQpZczb4JGZ7i0QVYQH2o",
+			"type": "string"
+		},
+		{
+			"key": "B",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJsdWthczEiLCJleHAiOjE3MDU0NzM0MzQsImlhdCI6MTcwMDI4OTQzNH0._dQBEWmY5LEBkTXYvktpP3nx2eOPw8AzTityasBSwTc",
+			"type": "string"
+		}
+	]
+}

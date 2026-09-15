@@ -1,0 +1,20 @@
+[
+    {
+    "name":"Lukáš",
+    "email":"lukas@lukas.sk",
+    "date":"2024-1-1",
+    "message":"Test"    
+    },
+    {
+        "name":"Peter",
+        "email":"peter@peter.sk",
+        "date":"2024-10-10",
+        "message":"Test2"    
+    },
+    {
+        "name":"Emil",
+        "email":"emil@emil.sk",
+        "date":"2024-1-18",
+        "message":"Test3"    
+    }
+]
