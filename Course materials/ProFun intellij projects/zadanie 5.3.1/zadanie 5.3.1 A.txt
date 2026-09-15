@@ -1,0 +1,10 @@
+zadanie 5.3.1 A
+
+inicializuj premennu sucet na hodnotu 0 (sucet = 0)
+
+opakuj pokial je premenna i mensia alebo rovna hodnote 30
+	vypocitaj premennu i + 2
+	vypocitaj premennu sucet + premennu i (sucet += i)
+	
+vypis na konzolu sucet
+

@@ -1,0 +1,11 @@
+zadanie 5.3.1 C
+
+inicializuj premennu faktorial na hodnotu 1 (faktorial = 1)
+vypis na vystup hlavicku tabulky ("number\tfactorial")
+
+opakuj pokial nie je premenna i mensia alebo rovna hodnote 5 (i <= 5)
+	inicializuj premennu i na hodnotu 1 (i = 1)
+	pripocitaj k premennej i hodnotu 1 (i++)
+	vypocitaj sucin faktorial * i
+	vypis na konzolu i + "\t\t" + faktorial
+	

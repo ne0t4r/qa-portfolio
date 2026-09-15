@@ -1,0 +1,38 @@
+	ÚLOHA B)
+======================
+[WIN]
+vyber ľubovoľný typ webového prehliadača
+[WIN+ŠÍPKA HORE]
+(voliteľný krok: v prípade potreby okno prehliadača maximalizuj)
+napíš názov článku uvedeného v úlohe
+[ENTER]
+[TAB] (použi viackrát podľa potreby)
+[ENTER] (použi viackrát podľa potreby)
+[CTRL]+F
+napíš slovné spojenie, ktoré chceš vyhľadať
+[ESC]
+[CTRL+SHIFT]+ŠÍPKA DOLE
+[CTRL+SHIFT]+ŠÍPKA DOPRRAVA
+[CTRL]+C
+[WIN]+D
+[ŠÍPKA DOPRAVA]
+[ENTER]
+[CTRL]+F10
+[ENTER] (použi viackrát podľa potreby)
+[ŠÍPKA DOLE] (použi viackrát podľa potreby) - upravene
+[ENTER] (použi viackrát podľa potreby)
+[doplň z možností] - nepotrebne
+napíš názov textového dokumentu
+[ENTER] (použi viackrát podľa potreby)
+[CTRL]+V
+[ALT]+TAB (použi viackrát podľa potreby)
+[CTRL]+L
+[CTRL]+C
+[ALT]+TAB (použi viackrát podľa potreby)
+[ENTER]
+[CTRL]+V
+[CTRL]+S
+[ALT]+F4
+[ALT]+F4
+[ALT]+TAB (použi viackrát podľa potreby)
+[ALT]+F4

@@ -1,0 +1,13 @@
+uloha c.3
+
+nacitaj od uzivatela cele cislo - pocet opakovani cyklu a vloz do premennej N
+nacitaj cele cislo a vloz do premennej cislo
+inicializuj premennu minimum na premennu cislo
+
+opakuj N-krat
+	ak minimum je mensie ako cislo minimum prepis na hodnotu cislo
+	inak pokracuj
+	nacitaj cele cislo a vloz do premennej cislo
+	
+vypis minimum je minimum
+	

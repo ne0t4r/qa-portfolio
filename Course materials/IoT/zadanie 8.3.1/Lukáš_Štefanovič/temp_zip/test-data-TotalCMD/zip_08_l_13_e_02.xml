@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_08_l_13_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_08_l_13</parent>
+    <text>
+    <![CDATA[
+       What statement is not true?
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+          Automated build tools are often integrated with version control system(such as Git or SVN).
+        ]]>
+        </option>
+        <option key="two"  >
+        <![CDATA[
+         Automated build tools are able to perform unit testing, integration testing, acceptance testing and deployment in one processing sequence.
+        ]]>
+        </option>
+        <option key="three" >
+        <![CDATA[
+         Your build should be separated and executed outside your IDE environment.
+        ]]>
+        </option>
+        <option key="four"  correct="true" >
+        <![CDATA[
+          'Full classpath build' prevents from 'Class not found exception' which allows revealing potential design flaws.
+        ]]>
+        </option>
+    </options>
+</quiz>

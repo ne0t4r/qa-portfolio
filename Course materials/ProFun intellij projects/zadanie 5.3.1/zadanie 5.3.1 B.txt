@@ -1,0 +1,9 @@
+zadanie 5.3.1 B
+
+inicializuj premennu sucin na hodnotu 1 (sucin = 1)
+
+opakuj pokial je premenna i mensia alebo rovna 15 (i <= 15)
+	vypocitaj premennu i plus 2 (i += 2)
+	vypocitaj premennu sucin * 1 (sucin * 1)
+	
+vypis na konzolu sucin

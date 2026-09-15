@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;main ()&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;sucet = 0&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<for text="&#34;int i=0; i &#60;= 30; i += 2 &#34;" comment="" color="FFFFFF">
+ <qFor>
+
+<instruction text="&#34;sucet += i&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qFor>
+</for>
+<instruction text="&#34;OUTPUT sucet&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>

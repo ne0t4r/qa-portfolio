@@ -1,0 +1,5 @@
+Vydanie	Windows 11 Pro
+Verzia	22H2
+Dátum inštalácie	‎6. ‎10. ‎2022
+Zostava operačného systému	22621.2283
+Rozhranie	Windows Feature Experience Pack 1000.22662.1000.0

@@ -1,0 +1,104 @@
+zadanie 8.3.1 popis
+
+ALT+SHIFT+D
+F7 - Lukáš_Štefanovič
+ENTER
+F7 - Harmonogram_roka_2023
+ENTER
+F7 - Zoznam_mojich_predmetov
+ENTER
+SHIFT+F4 - 01.januar.txt
+ENTER
+ALT+F3 - vypisat text
+CTRL-S
+ALT+F4
+ALT+TAB - spat na TC
+F5 - nakopirovat a zmenit nazov na: 06.jun.txt,08.august.txt,10.oktober.txt
+SHIFT+F4 - 02.februar.csv
+ENTER
+ALT+F3 - vypisat text
+CTRL+S
+ALT+F4
+ALT+TAB - spat na TC
+F5 - nakopirovat a zmenit nazov na: 03.marec.csv,05.maj.csv,11.november.csv
+SHIFT+F4 - 04.april.xml
+ENTER
+ALT+F3 - vypisat text
+CTRL+S - ulozit
+ALT+F4
+ALT+TAB - spat na TC
+F5 - nakopirovat a zmenit nazov na: 07.jul.xml,09.september.xml,12.december.xml
+TAB
+CTRL+PGUP
+ENTER
+F7 - adresar temp_dir
+TAB
+ALT+F7 - zaskrtnem RegEx a dam vyhladat [*.csv]|[*.txt]|[*.xml] alebo *.* (co je vsetko v adresari), vytvorit zoznam
+CTRL+A
+F5 - prekopirovat
+ENTER
+CTRL+PGUP - zrusit zoznam
+TAB
+ALT+F7 - počet najdených suborov 5 s pismenom "u", cislo 31 sa v nich nachadza 3x
+ESC - zrusit okno hladanie
+CTRL+Q - april,jul,september,december
+CTRL+Q - vypnut rychly nahlad
+INSERT - oznacit zip
+ALT+F7 - hladat tu vyberiem zipko, hladany vyraz replacement najdene subory 1x
+ALT+F7 - Exercise 02, vytvorit zoznam, 
+CTRL+A
+TAB - druhe okno
+F7 - temp_zip
+TAB
+F5 - porekopirovat do temp_zip
+TAB
+CTRL+PLUS alebo CTRL+A
+CTRL+M - pouzijeme hladat a nahradit
+F8 alebo DEL - zmazeme nevyhovujuce subory
+CTRL+PGUP - pouzijeme o adresar vyssie
+CTRL+PGDN - potvrdzujeme vyber nahrada za ENTER
+SHIFT+F4 - Introduction_to_IT.txt
+ALT+F3
+CTRL+S ulozime
+ALT+F4
+F5 - kopia Introduction_to_IT_2
+F6 - zmenit nazov na Databázy.txt
+ALT+F3 - urobime zmeny v notepade
+CTRL+S
+ALT+F4
+INSERT - oznacit Databázy.tx
+F5 - kopia prepisat nazov na Programming_Fundamentals.txt
+WIN, Notepad++ ENTER
+CTRL+SHIFT+F , pouzijem filtre
+INSERT, F8
+CTRL+PGUP
+ALT+F4
+
+- medzi oknami som sa presuval pomocou TAB
+- v dialogovych oknach ako hladat,premenovat atd. som sa presuval pomocou TAB, zaskrtaval som pomocou SPACE a potvrdzoval ENTERom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

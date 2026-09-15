@@ -1,0 +1,46 @@
+uloha C
+
+uloz do premennej cislo1=1
+uloz do premennej cislo2=2
+uloz do premennej cislo3=3
+uloz do premennej cislo4=4	
+uloz do premennej cislo5=5
+uloz do premennej cislo6=6
+uloz do premennej cislo7=7
+uloz do premennej cislo8=8
+uloz do premennej cislo9=9
+uloz do premennej cislo10=10
+
+vypocitaj druha mocnina (cislo1 * cislo1) a uloz do premennej cislo1naDruhu
+vypocitaj druha mocnina (cislo2 * cislo2) a uloz do premennej cislo2naDruhu
+vypocitaj druha mocnina (cislo3 * cislo3) a uloz do premennej cislo3naDruhu
+vypocitaj druha mocnina (cislo4 * cislo4) a uloz do premennej cislo4naDruhu
+vypocitaj druha mocnina (cislo5 * cislo5) a uloz do premennej cislo5naDruhu
+vypocitaj druha mocnina (cislo6 * cislo6) a uloz do premennej cislo6naDruhu
+vypocitaj druha mocnina (cislo7 * cislo7) a uloz do premennej cislo7naDruhu
+vypocitaj druha mocnina (cislo8 * cislo8) a uloz do premennej cislo8naDruhu
+vypocitaj druha mocnina (cislo9 * cislo9) a uloz do premennej cislo9naDruhu
+vypocitaj druha mocnina (cislo10 * cislo10) a uloz do premennej cislo10naDruhu
+
+vypocitaj tretia mocnina (cislo1 * cislo1 * cislo1) a uloz do premennej cislo1naTretiu
+vypocitaj tretia mocnina (cislo2 * cislo2 * cislo2) a uloz do premennej cislo2naTretiu
+vypocitaj tretia mocnina (cislo3 * cislo3 * cislo3) a uloz do premennej cislo3naTretiu
+vypocitaj tretia mocnina (cislo4 * cislo4 * cislo4) a uloz do premennej cislo4naTretiu
+vypocitaj tretia mocnina (cislo5 * cislo5 * cislo5) a uloz do premennej cislo5naTretiu
+vypocitaj tretia mocnina (cislo6 * cislo6 * cislo6) a uloz do premennej cislo6naTretiu
+vypocitaj tretia mocnina (cislo7 * cislo7 * cislo7) a uloz do premennej cislo7naTretiu
+vypocitaj tretia mocnina (cislo8 * cislo8 * cislo8) a uloz do premennej cislo8naTretiu
+vypocitaj tretia mocnina (cislo9 * cislo9 * cislo9) a uloz do premennej cislo9naTretiu
+vypocitaj tretia mocnina (cislo10 * cislo10 * cislo10) a uloz do premennej cislo10naTretiu
+
+
+vypis cislo1,cislo1naDruhu,cislo1naTretiu
+vypis cislo2,cislo2naDruhu,cislo2naTretiu
+vypis cislo3,cislo3naDruhu,cislo3naTretiu
+vypis cislo4,cislo4naDruhu,cislo4naTretiu
+vypis cislo5,cislo5naDruhu,cislo5naTretiu
+vypis cislo6,cislo6naDruhu,cislo6naTretiu
+vypis cislo7,cislo7naDruhu,cislo7naTretiu
+vypis cislo8,cislo8naDruhu,cislo8naTretiu
+vypis cislo9,cislo9naDruhu,cislo9naTretiu
+vypis cislo10,cislo10naDruhu,cislo10naTretiu

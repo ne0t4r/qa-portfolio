@@ -1,0 +1,14 @@
+uloha c.2
+
+zadaj cele cislo a vloz do premennej cislo
+inicializuj sucet na nulu (sucet = 0)
+inicializuj premennu opakovanie na nulu (opakovanie = 0)
+
+opakuj pokial cislo je rozne ako 9999
+	navys premennu opakovanie o 1 (opakovanie = opakovanie + 1)
+	nacitaj cele cislo a vloz do premennej cislo
+	nacitane cislo pripocitaj do suctu a zapis do premennej sucet (sucet = sucet + cislo)
+ak premenna opakovanie je rovna nule (opakovanie = 0) tak vypis "priemer = 0" a ukonci program
+vypocitaj priemer a vloz do premennej priemer = sucet / opakovanie
+vypis na vystup priemer
+

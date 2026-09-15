@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Intellij">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Uloha 2.3.1 B.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Uloha 2.3.1 A.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Uloha 2.3.1 C.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Uloha 2.3.1 B.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Uloha 2.3.1 A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Uloha 2.3.1 C.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

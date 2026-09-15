@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_04_l_09_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_04_l_09</parent>
+    <text>
+    <![CDATA[
+        Published interface pattern improves mainly
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+            extensibility
+        ]]>        
+        </option>       
+        <option key="two">
+        <![CDATA[
+            scalability
+        ]]>        
+        </option>
+        <option key="three" correct="true" >
+        <![CDATA[
+            encapsulation
+        ]]>        
+        </option>
+		
+		<option key="four">
+        <![CDATA[
+            maintainability
+        ]]>        
+        </option>
+    </options>
+</quiz>

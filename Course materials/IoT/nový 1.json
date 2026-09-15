@@ -1,0 +1,27 @@
+{
+"people":
+	[
+		{
+		"id": 1,
+		"meno": "Miroslav",
+		"priezvisko": "Dusko",
+		"ovocie": "jablko",
+		"suma": 1.20
+		},
+		{
+		"id":2
+		"meno": "Lukas",
+		"priezvisko": "Stefanovic",
+		"ovocie": "kiwi",
+		"suma": 0.55
+		},
+		{
+		"id":3,
+		"meno": "Daniela",
+		"priezvisko": "Vavrus",
+		"ovocie": "banan",
+		"suma":5.05
+		}
+	
+	]
+}

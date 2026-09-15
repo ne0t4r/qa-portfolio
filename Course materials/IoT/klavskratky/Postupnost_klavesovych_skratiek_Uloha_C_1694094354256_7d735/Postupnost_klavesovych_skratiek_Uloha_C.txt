@@ -1,0 +1,36 @@
+ÚLOHA C)
+======================
+[WIN]+R
+napíš cmd
+[ENTER]
+[WIN]+ŠÍPKA VĽAVO
+[WIN]
+napíš Word
+[ENTER] (použi viackrát podľa potreby)
+[WIN]+ŠÍPKA VPRAVO
+[ALT]+TAB (použi viackrát podľa potreby)
+napíš msinfo32
+[ENTER]
+[WIN]+ŠÍPKA HORE
+[WIN]+SHIFT+S
+[TAB]
+[ENTER] (použi viackrát podľa potreby)
+[WIN]+ŠÍPKA DOLE (použi viackrát podľa potreby)
+[ALT]+TAB (použi viackrát podľa potreby)
+[CTRL]+V
+[CTRL]+S
+[TAB] (použi viackrát podľa potreby, aby si sa dostal na "Ďalšie možnosti...")
+[ENTER]
+[TAB] (choďte cez možnosť "Prehľadávať")
+[ŠÍPKA DOLE] (použi viackrát podľa potreby)
+[ENTER]
+napíš názov dokumentu
+[TAB] (použi viackrát podľa potreby)
+[TAB] (použi viackrát podľa potreby) (touto klávesovou skratkou nájdi umiestnenie Pracovná plocha)
+[ENTER]
+[ŠÍPKA DOLE] (použi viackrát podľa potreby)
+[TAB] (nájde umiestenie priečinka, ktorý ste vytvárali v úlohe A): X_VasePriezvisko_Priecinok)
+[ENTER]
+[ENTER] (použi viackrát podľa potreby)
+[doplň z možností] - navyse
+[WIN]+D

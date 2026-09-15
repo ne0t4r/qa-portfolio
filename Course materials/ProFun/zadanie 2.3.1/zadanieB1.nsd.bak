@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-11" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="lukas" created="2023-10-26" changedby="lukas" changed="2023-10-26" origin="Structorizer 3.32-11" text="&#34;zistiMocninu(x, y)&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;vysledok = 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<for text="&#34;i = 0, i &#60; y, i++&#34;" comment="&#34;&#34;" counterVar="dummy_counter" startValue="i = 0, i &#60; y, i++" stepConst="1" style="FREETEXT" color="ffffff" disabled="0">
+			<qFor>
+				<instruction text="&#34;vysledok *= x&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFor>
+		</for>
+		<instruction text="&#34;RETURN vysledok&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+	</children>
+</root>

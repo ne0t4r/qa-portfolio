@@ -1,0 +1,28 @@
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::da47:866d:4d13:eaf9%14
+   IPv4 Address. . . . . . . . . . . : 192.168.0.100
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+Ethernet adapter VMware Network Adapter VMnet1:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::1c3e:ac85:111b:4f13%9
+   IPv4 Address. . . . . . . . . . . : 192.168.86.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+
+Ethernet adapter VMware Network Adapter VMnet8:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::16c8:b61c:8c01:d9b7%7
+   IPv4 Address. . . . . . . . . . . : 192.168.17.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+IP konfiguráciu vygeneroval Lukáš Štefanovič. 

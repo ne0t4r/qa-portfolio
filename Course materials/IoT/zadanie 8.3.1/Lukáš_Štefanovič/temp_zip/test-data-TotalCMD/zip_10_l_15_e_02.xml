@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_10_l_15_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_10_l_15</parent>
+    <text>
+    <![CDATA[
+       What non-functional characteristic is often a counter-part to other non-functional characteristics?
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+          maintenance
+        ]]>
+        </option>
+        <option key="two" correct="true" >
+        <![CDATA[
+         affordability
+        ]]>
+        </option>
+        <option key="three" >
+        <![CDATA[
+         scalability
+        ]]>
+        </option>
+        <option key="four" >
+        <![CDATA[
+          performance
+        ]]>
+        </option>
+    </options>
+</quiz>

@@ -1,0 +1,37 @@
+uloha B
+
+zadaj jedno 5-ciferne cislo
+	uloz ho do premennej cislo0
+
+vypocitaj cislo0 modulo 10000
+	uloz ho do premennej cifraMod1
+vypocitaj cisl0 minus cifraMod1
+	uloz ho do premennej cislo1
+vypocitaj cislo1 delene 10000
+	uloz ho do premennej cifra1
+
+vypocitaj cislo0 modulo 1000
+	uloz ho do premennej cifraMod2
+vypocitaj (cislo0 - cifraMod2) - cislo1
+	uloz ho do premennej cislo2
+vypocitaj cislo2 delene 1000
+	uloz ho do premennej cifra2
+
+vypocitaj cislo0 modulo 100
+	uloz ho do premennej cifraMod3
+vypocitaj (cislo0 - cifraMod3)-(cislo1 + cislo2)
+	uloz ho do premennej cislo3
+vypocitaj cislo3 delene 100
+	uloz ho do premennej cifra3
+
+vypocitaj cislo0 modulo 10
+	uloz ho do premennej cifraMod4
+vypocitaj (cislo0 - cifraMod4)-(cislo3 + cislo2 + cislo1)
+	uloz ho do premennej cislo4
+vypocitaj cislo4 delene 10
+	uloz ho do premennej cifra4
+
+vypocitaj (cislo0 - cislo4)-(cislo3 + cislo2 + cislo1)
+	uloz ho do premennej cifra5
+
+vypis cifra1 "   " cifra2 "   " cifra3 "   " cifra4 "   " cifra5

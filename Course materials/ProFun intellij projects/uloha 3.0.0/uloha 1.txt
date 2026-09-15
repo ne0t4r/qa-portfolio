@@ -1,0 +1,14 @@
+uloha 1
+
+inicializuj premenne: celkovaSpotreba, celkovaVzdialenost, aktualnaSpotreba, prejdenaVzdialenost
+
+nacitaj spotrebovane palivo a uloz do premennej aktualnaSpotreba a pripocitaj k celkovej spotrebe (celkovaSpotreba = celkovaSpotreba + aktualnaSpotreba)
+
+opakuj kym aktualnaSpotreba je rozna ako -1
+	ak spotreba = -1 opustit cyklus
+	nacitaj prejdenuVzdialenost a uloz do premennej prejdenaVzdialenost a pripocitaj do celkovej vzdialenosti 	(celkovaVzdialenost = 	celkovaVzdialenost + prejdenaVzdialenost)
+	vypocitaj priemernu spotrebu a uloz do premennej priemernaSpotreba (priemernaSpotreba = (spotreba / prejdenaVzdialenost) *100)
+	vypis aktualnu priemernu spotrebu = priemernaSpotreba
+
+vypocitaj dlhodobu priemernu spotrebu (dlhodobaPriemernaSpotreba = (celkovaSpotreba / celkovaVzdialenost)*100)
+vypis dlhodobu priemernu spotrebu = dlhodobaPriemernaSpotreba

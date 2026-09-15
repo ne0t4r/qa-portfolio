@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_11_l_16_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_11_l_16</parent>
+    <text>
+    <![CDATA[
+       This sequence diagram models Lookup factory scenario. Instances interact based on exchange of messages.
+	   Assign the correct messages to the order numbers in the diagram.
+    ]]>
+    </text>
+	
+	<img>lecture16_factory_lookup_quiz.svg</img>
+	
+    <options>
+        <option key="one" >
+        <![CDATA[
+          1.instantiateYourself, 2.Factory returned, 3.getServiceBeanInstance, 4.ServiceImpl instance returned, 5.lookup, 6.ServiceImpl instance returned
+        ]]>
+        </option>
+        <option key="two" >
+        <![CDATA[
+         1.lookup, 2.getServiceBeanInstance, 3.ServiceImpl instance returned, 4.instantiateYourself, 5.Factory returned, 6.ServiceImpl instance returned
+        ]]>
+        </option>
+        <option key="three" correct="true" >
+        <![CDATA[
+         1.lookup, 2.Factory returned, 3.getServiceBeanInstance, 4.instantiateYourself, 5.ServiceImpl instance returned, 6.ServiceImpl instance returned
+        ]]>
+        </option>
+        <option key="four" >
+        <![CDATA[
+          1.lookup, 2.getServiceBeanInstance, 3.ServiceImpl instance returned, 4.instantiateYourself, 5.Factory returned, 6.ServiceImpl instance returned
+        ]]>
+        </option>
+    </options>
+</quiz>

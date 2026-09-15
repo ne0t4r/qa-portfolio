@@ -1,0 +1,47 @@
+===================================================
+A1) Ako vytvoriť nový priečinok
+===================================================
+
+Pracujte s anglickou verziou webovej aplikácie OneDrive
+
+Prihláste sa do Microsoft 365 a otvorte v prehliadači stránku www.office.com
+
+Klikni na ikonu s názvom App launcher
+
+Klikni na [OneDrive]
+
+Klikni na [Add new]
+
+Klikni na [Folder]
+
+Klikni na [Name]
+
+Napíš názov priečinka do poľa s názvom [Štefanovič-Bukovan]
+
+Klikni na [Create]
+
+===================================================
+A2) Ako do priečinku vložiť video a prez. listinu
+===================================================
+
+Otvor OneDrive aplikáciu vo svojom počítači
+
+Klikni na daný priečinok vytvorený v časti A1) a otvor ho
+
+Pomocou klávesovej skratky [CTRL] + C skopíruj videozáznam a prezenčnú listinu z Teams
+
+Pomocou klávesovej skratky [CTRL] + V vlož videozáznam a prezenčnú do priečinku vo OneDrive
+
+===================================================
+A3) Ako zdieľať prístup k priečinku
+===================================================
+
+Vo webovej aplikácii OneDrive podrž kurzor myši na priečinku vytvorenom v časti A1)
+
+Klikni na ikonu s názvom [Share]
+
+Napíš meno používateľa, ktorému sa bude zdieľať priečinok, do poľa s názvom [Add a name, group, or email]
+
+Klikni na tohto účastníka
+
+Klikni na [Send]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;main ()&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;faktorial = 1&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;OUTPUT &#34;&#34;number\tfactorial&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<for text="&#34;int i = 1; i &#60;= 5; i ++ &#34;" comment="" color="FFFFFF">
+ <qFor>
+
+<instruction text="&#34;faktorial *= i&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;OUTPUT i + &#34;&#34;\t\t&#34;&#34; + faktorial&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qFor>
+</for>
+ </children>
+</root>

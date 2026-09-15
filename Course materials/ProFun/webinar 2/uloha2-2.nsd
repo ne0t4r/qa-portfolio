@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="zistiPrestupnost(rok)" comment="" type="program" style="nice">
+ <children>
+
+<alternative text="&#34;rok MOD 100 = 0&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<alternative text="&#34;rok MOD 400 = 0&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;RETURN 1&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+<instruction text="&#34;RETURN 0&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qFalse>
+</alternative>
+ </qTrue>
+ <qFalse>
+
+<alternative text="&#34;rok MOD 4 = 0&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;RETURN 1&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+<instruction text="&#34;RETURN 0&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qFalse>
+</alternative>
+ </qFalse>
+</alternative>
+ </children>
+</root>

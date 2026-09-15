@@ -1,0 +1,14 @@
+uloha a
+
+zadaj cele cislo
+uloz ho do premennej cislo1
+zadaj cele cislo
+uloz ho do premennej cislo2
+
+vypocitaj cislo1 modulo cislo2
+
+ak vysledok je rovny 0
+	vypis cislo1 je delitelne cislo2
+ak je vysledok rovny alebo vacsi 1
+	vypis cislo1 nieje delitelne cislo2
+

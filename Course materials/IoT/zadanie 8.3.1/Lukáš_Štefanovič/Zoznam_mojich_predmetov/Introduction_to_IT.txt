@@ -1,0 +1,3 @@
+Meno: Jozef Programátor
+Názov kurzu: Introduction to IT
+Začiatok kurzu: 27.4.2023

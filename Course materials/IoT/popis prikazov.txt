@@ -1,0 +1,40 @@
+zadanie 7.3.1
+
+1.	cd Desktop
+	mkdir IT_v_kurze
+2.	cd IT_v_kurze
+	mkdir Povodne_texty Opravene_texty
+3.	cd Povodne_texty
+3.1 echo Studujem IT. >> A.txt
+3.2 echo Studujem JAVU. >> B.txt
+3.3	echo Studujem testing. >> C.txt
+3.4 echo Studujem databazy. >> D.txt
+3.5	echo Studujem FED. >> E.txt
+4.	copy A.txt ..\Opravene_texty
+	copy B.txt ..\Opravene_texty
+	copy C.txt ..\Opravene_texty
+	copy D.txt ..\Opravene_texty
+	copy E.txt ..\Opravene_texty
+5.	cd ..
+	rename Povodne_texty Texty
+	rename Opravene_texty Zaloha
+6.	cd Texty
+	chcp 65001
+	dir > výpis.txt
+	echo Zalohu vygeneroval Lukáš Štefanovič. >> výpis.txt
+7.	cd..
+	cd Zaloha
+	dir > výpis.txt
+	echo Zalohu vygeneroval Lukáš Štefanovič. >> výpis.txt
+
+8.	cd..
+	cd Texty
+	del *.txt
+9.	cd..
+	rmdir Texty
+10. ipconfig > IP.txt
+11.	echo IP konfiguráciu vygeneroval Lukáš Štefanovič. >> IP.txt
+12.	cls
+13.	exit
+	
+	

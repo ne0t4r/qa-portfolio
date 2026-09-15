@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_02_l_07_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_02_l_07</parent>
+    <text>
+    <![CDATA[
+        Which statement is not true?
+    ]]>
+    </text>
+    <options>
+        <option key="one">
+        <![CDATA[
+            Modular structure is not present in a monolith service.
+        ]]>
+        </option>
+
+        <option key="two" >
+        <![CDATA[
+            Monotlith services are often heavyweight with decent use capabilities.
+        ]]>
+        </option>
+
+        <option key="three" >
+        <![CDATA[
+            Service design focuses primarily on designing service contract with an emphasis on ease of use.
+        ]]>
+        </option>
+		
+		<option key="four" correct="true" >
+        <![CDATA[
+            When modifications must take place in services with good modular design, we just need to replace the whole module by a new implementation or reorder the execution of execution steps or remove one of these execution steps.
+        ]]>
+        </option>
+    </options>
+</quiz>

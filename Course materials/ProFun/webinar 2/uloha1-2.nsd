@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;overTrojnerovnost(a, b ,c)&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;text = &#34;&#34;trojuholnik nie je mozne zostrojit&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<alternative text="&#34;a + b &#62; c&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<alternative text="&#34;a + c &#62; b&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<alternative text="&#34;b + c &#62; a&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;OUTPUT &#34;&#34;trojuholnik je mozne zostrojit&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+<instruction text="&#34;OUTPUT text&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vyber_sci-fi_literatury>
+	<kniha>
+		<ID_autora>1</ID_autora>
+		<Autor>Herbert George Wells</Autor>
+		<ID_knihy>1.1</ID_knihy>
+		<Nazov>Stroj casu</Nazov>
+		<Orig_nazov>The Time Machine</Orig_nazov>
+		<Rok_orig_vydania>1895</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>1</ID_autora>
+		<Autor>Herbert George Wells</Autor>
+		<ID_knihy>1.2</ID_knihy>
+		<Nazov>Ostrov doktora Moreaua</Nazov>
+		<Orig_nazov>The Island of Doctor Moreaua</Orig_nazov>
+		<Rok_orig_vydania>1896</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>1</ID_autora>
+		<Autor>Herbert George Wells</Autor>
+		<ID_knihy>1.3</ID_knihy>
+		<Nazov>Neviditelny muz</Nazov>
+		<Orig_nazov>The Invisible Man</Orig_nazov>
+		<Rok_orig_vydania>1897</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>1</ID_autora>
+		<Autor>Herbert George Wells</Autor>
+		<ID_knihy>1.4</ID_knihy>
+		<Nazov>Vojna svetov</Nazov>
+		<Orig_nazov>The War of the Worlds</Orig_nazov>
+		<Rok_orig_vydania>1898</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>1</ID_autora>
+		<Autor>Herbert George Wells</Autor>
+		<ID_knihy>1.5</ID_knihy>
+		<Nazov>Prvy ludia na Mesiaci</Nazov>
+		<Orig_nazov>The First Men in the Moon</Orig_nazov>
+		<Rok_orig_vydania>1901</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>2</ID_autora>
+		<Autor>John Wyndham</Autor>
+		<ID_knihy>2.1</ID_knihy>
+		<Nazov>Den Trifidov</Nazov>
+		<Orig_nazov>The Day of the Triffids</Orig_nazov>
+		<Rok_orig_vydania>1951</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>2</ID_autora>
+		<Autor>John Wyndham</Autor>
+		<ID_knihy>2.2</ID_knihy>
+		<Nazov>Votrelci z hlbin</Nazov>
+		<Orig_nazov>The Kraken Wakes</Orig_nazov>
+		<Rok_orig_vydania>1953</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>2</ID_autora>
+		<Autor>John Wyndham</Autor>
+		<ID_knihy>2.3</ID_knihy>
+		<Nazov>Kukly</Nazov>
+		<Orig_nazov>The Chrysalids</Orig_nazov>
+		<Rok_orig_vydania>1955</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>2</ID_autora>
+		<Autor>John Wyndham</Autor>
+		<ID_knihy>2.4</ID_knihy>
+		<Nazov>Midwichske kukacky</Nazov>
+		<Orig_nazov>The Midwich Cuckoos</Orig_nazov>
+		<Rok_orig_vydania>1957</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>3</ID_autora>
+		<Autor>Stephan Wul</Autor>
+		<ID_knihy>3.1</ID_knihy>
+		<Nazov>Nork</Nazov>
+		<Orig_nazov>Niourk</Orig_nazov>
+		<Rok_orig_vydania>1957</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>3</ID_autora>
+		<Autor>Stephan Wul</Autor>
+		<ID_knihy>3.2</ID_knihy>
+		<Nazov>Fantasticka planeta</Nazov>
+		<Orig_nazov>Oms by the Dozen</Orig_nazov>
+		<Rok_orig_vydania>1957</Rok_orig_vydania>
+		<Prelozene>nie</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>4</ID_autora>
+		<Autor>Robert Anson Heinlein</Autor>
+		<ID_knihy>4.1</ID_knihy>
+		<Nazov>Matuzalemove deti</Nazov>
+		<Orig_nazov>Methuselah's Children</Orig_nazov>
+		<Rok_orig_vydania>1958</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>4</ID_autora>
+		<Autor>Robert Anson Heinlein</Autor>
+		<ID_knihy>4.2</ID_knihy>
+		<Nazov>Hviezdna pechota</Nazov>
+		<Orig_nazov>Starship Troopers</Orig_nazov>
+		<Rok_orig_vydania>1959</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>4</ID_autora>
+		<Autor>Robert Anson Heinlein</Autor>
+		<ID_knihy>4.3</ID_knihy>
+		<Nazov>Kompletni historie budoucnosti</Nazov>
+		<Orig_nazov>The Past Through Tomorrow</Orig_nazov>
+		<Rok_orig_vydania>1967</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>4</ID_autora>
+		<Autor>Robert Anson Heinlein</Autor>
+		<ID_knihy>4.4</ID_knihy>
+		<Nazov>Mesiac je drsna milenka</Nazov>
+		<Orig_nazov>The Moon is A Harsh Mistress</Orig_nazov>
+		<Rok_orig_vydania>1966</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>5</ID_autora>
+		<Autor>Stanislav Lem</Autor>
+		<ID_knihy>5.1</ID_knihy>
+		<Nazov>Solaris</Nazov>
+		<Orig_nazov>Solaris</Orig_nazov>
+		<Rok_orig_vydania>1961</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>6</ID_autora>
+		<Autor>William Hope Hodgson</Autor>
+		<ID_knihy>6.1</ID_knihy>
+		<Nazov>Dom na rozhrani</Nazov>
+		<Orig_nazov>The House on the Borderland</Orig_nazov>
+		<Rok_orig_vydania>1908</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>6</ID_autora>
+		<Autor>William Hope Hodgson</Autor>
+		<ID_knihy>6.2</ID_knihy>
+		<Nazov>Nocna krajina</Nazov>
+		<Orig_nazov>The Night Land</Orig_nazov>
+		<Rok_orig_vydania>1912</Rok_orig_vydania>
+		<Prelozene>nie</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>7</ID_autora>
+		<Autor>Simon Clark</Autor>
+		<ID_knihy>7.1</ID_knihy>
+		<Nazov>Noc Trifidov</Nazov>
+		<Orig_nazov>The Night of the Triffids</Orig_nazov>
+		<Rok_orig_vydania>2001</Rok_orig_vydania>
+		<Prelozene>nie</Prelozene>
+	</kniha> 
+	<kniha>
+		<ID_autora>8</ID_autora>
+		<Autor>Jack Finney</Autor>
+		<ID_knihy>8.1</ID_knihy>
+		<Nazov>Invazia zlodejov tiel</Nazov>
+		<Orig_nazov>Invasion of the Body Snatchers</Orig_nazov>
+		<Rok_orig_vydania>1955</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>9</ID_autora>
+		<Autor>Dan Simmons</Autor>
+		<ID_knihy>9.1</ID_knihy>
+		<Nazov>Hyperion</Nazov>
+		<Orig_nazov>Hyperion</Orig_nazov>
+		<Rok_orig_vydania>1989</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>9</ID_autora>
+		<Autor>Dan Simmons</Autor>
+		<ID_knihy>9.2</ID_knihy>
+		<Nazov>Pad Hyperionu</Nazov>
+		<Orig_nazov>Fall of the Hyperion</Orig_nazov>
+		<Rok_orig_vydania>1990</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>9</ID_autora>
+		<Autor>Dan Simmons</Autor>
+		<ID_knihy>9.3</ID_knihy>
+		<Nazov>Endymion</Nazov>
+		<Orig_nazov>Endymion</Orig_nazov>
+		<Rok_orig_vydania>1996</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>9</ID_autora>
+		<Autor>Dan Simmons</Autor>
+		<ID_knihy>9.4</ID_knihy>
+		<Nazov>Vzostup Endymionu</Nazov>
+		<Orig_nazov>The Rise of Endymion</Orig_nazov>
+		<Rok_orig_vydania>1997</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>10</ID_autora>
+		<Autor>Jevgenij Ivanovic Zamjatin</Autor>
+		<ID_knihy>10.1</ID_knihy>
+		<Nazov>My</Nazov>
+		<Orig_nazov>My</Orig_nazov>
+		<Rok_orig_vydania>1920</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>	
+	<kniha>
+		<ID_autora>11</ID_autora>
+		<Autor>Aldous Huxley</Autor>
+		<ID_knihy>11.1</ID_knihy>
+		<Nazov>Prekrasny novy svet</Nazov>
+		<Orig_nazov>Brave New World</Orig_nazov>
+		<Rok_orig_vydania>1932</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>12</ID_autora>
+		<Autor>George Orwell</Autor>
+		<ID_knihy>12.1</ID_knihy>
+		<Nazov>1984</Nazov>
+		<Orig_nazov>Nineteen Eighty-Four</Orig_nazov>
+		<Rok_orig_vydania>1949</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>13</ID_autora>
+		<Autor>Liou Cch'-sin</Autor>
+		<ID_knihy>13.1</ID_knihy>
+		<Nazov>Problem troch telies</Nazov>
+		<Orig_nazov>The three-body problem</Orig_nazov>
+		<Rok_orig_vydania>2008</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>13</ID_autora>
+		<Autor>Liou Cch'-sin</Autor>
+		<ID_knihy>13.2</ID_knihy>
+		<Nazov>Temny les</Nazov>
+		<Orig_nazov>The Dark Forest</Orig_nazov>
+		<Rok_orig_vydania>2008</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+	<kniha>
+		<ID_autora>13</ID_autora>
+		<Autor>Liou Cch'-sin</Autor>
+		<ID_knihy>13.3</ID_knihy>
+		<Nazov>Spomienka na Zem</Nazov>
+		<Orig_nazov>Deaths's End</Orig_nazov>
+		<Rok_orig_vydania>2010</Rok_orig_vydania>
+		<Prelozene>ano</Prelozene>
+	</kniha>
+</Vyber_sci-fi_literatury>

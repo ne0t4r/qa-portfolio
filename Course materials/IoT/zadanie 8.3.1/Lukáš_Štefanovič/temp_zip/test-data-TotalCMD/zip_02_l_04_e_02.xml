@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_02_l_04_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_02_l_04</parent>
+    <text>
+    <![CDATA[
+        Which statement is not true?
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+            Order of classes in classpath is arbitrary.
+        ]]>        
+        </option>       
+        <option key="two">
+        <![CDATA[
+            Maven resolves dependencies before deploying and packaging phase.
+        ]]>        
+        </option>
+        <option key="three" correct="true" >
+        <![CDATA[
+            The duplicity problem can be satisfactorily handled by Java 8 or by Maven.
+        ]]>        
+        </option>
+		
+		<option key="four">
+        <![CDATA[
+            Resolving dependencies transitively may cause conflicts of loaded compiled java files into classpath.
+        ]]>        
+        </option>
+    </options>
+</quiz>

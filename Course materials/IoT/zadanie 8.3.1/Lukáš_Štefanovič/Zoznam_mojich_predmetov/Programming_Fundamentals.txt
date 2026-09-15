@@ -1,0 +1,3 @@
+Meno: Jozef Programátor
+Názov kurzu: Programming Fundamentals
+Začiatok kurzu: 27.4.2025

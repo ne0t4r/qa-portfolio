@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_12_l_17_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_12_l_17</parent>
+    <text>
+    <![CDATA[
+       Instances of classes presented in the diagram interact with each other with the aim of approving the application. 
+	   These classes are located in modules that comprise a structure that is prescribed by Demotion technique. What are 
+	   the names of modules and classes in the diagram?
+    ]]>
+    </text>
+	
+	<img>lecture17_demotion_quiz.svg</img>
+	
+    <options>       
+        <option key="one" >
+        <![CDATA[
+          module A = application approval  module, module B = customers module, module C = calculations module, 
+		  class X = ApplicationApprover,
+		  class Y = BankCustomer,		  
+		  class Z = IndexCalculator
+        ]]>
+        </option>
+        <option key="two" correct="true" >
+        <![CDATA[
+          module A = customers module, module B = application approval  module, module C = calculations module, 
+		  class X = BankCustomer,
+		  class Y = ApplicationApprover,
+		  class Z = IndexCalculator
+        ]]>
+        </option>
+        <option key="three" >
+        <![CDATA[
+          module A = customers module, module B =  calculations module, module C = application approval module, 
+		  class X = BankCustomer,
+		  class Y = IndexCalculator,
+		  class Z = ApplicationApprover
+        ]]>
+        </option>
+    </options>
+</quiz>

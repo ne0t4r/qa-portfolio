@@ -1,0 +1,13 @@
+uloha c2
+
+nacitaj cislo uctu a vloz do premennej cisloUctu
+
+opakuj pokial cisloUctu je rozna ako -1
+	nacitaj pociatocny zostatok a vloz do premennej pociatocnyZostatok
+	nacitaj vydadvky a vloz do premennej vydavky
+	nacitaj prijmy a uloz do premennej prijmy
+	nacitaj limit na kreditnej karte a uloz do premennej limit
+	vypocitaj novy zostastok a vloz do premennej novyZostatok (novyZostatok = pociatocnyZostatok + vydavky - prijmy)
+
+	ak novyZostatok prekrocil limit na kreditnej karte
+		vypis cisloUctu, limit, novyZostatok, limit bol prekroceny

@@ -1,0 +1,278 @@
+{
+"Vyber_sci-fi_literatury":
+	{
+	"kniha":
+	[
+		{
+		"ID_autora":1,
+		"Autor":"Herbert George Wells",
+		"ID_knihy":1.1,
+		"Nazov":"Stroj casu",
+		"Orig_nazov":"The Time Machine",
+		"Rok_orig_vydania":1895,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":1,
+		"Autor":"Herbert George Wells",
+		"ID_knihy":1.2,
+		"Nazov":"Ostrov doktora Moreaua",
+		"Orig_nazov":"The Island of Doctor Moreaua",
+		"Rok_orig_vydania":1896,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":1,
+		"Autor":"Herbert George Wells",
+		"ID_knihy":1.3,
+		"Nazov":"Neviditelny muz",
+		"Orig_nazov":"The Invisible Man",
+		"Rok_orig_vydania":1897,
+		"Prelozene":"ano"
+		},
+		{	
+		"ID_autora":1,
+		"Autor":"Herbert George Wells",
+		"ID_knihy":1.4,
+		"Nazov":"Vojna svetov",
+		"Orig_nazov":"The War of the Worlds",
+		"Rok_orig_vydania":1898,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":1,
+		"Autor":"Herbert George Wells",
+		"ID_knihy":1.5,
+		"Nazov":"Prvy ludia na Mesiaci",
+		"Orig_nazov":"The First Men in the Moon",
+		"Rok_orig_vydania":1901,
+		"Prelozene":"ano"
+		},	
+		{
+		"ID_autora":2,
+		"Autor":"John Wyndham",
+		"ID_knihy":2.1,
+		"Nazov":"Den Trifidov",
+		"Orig_nazov":"The Day of the Triffids",
+		"Rok_orig_vydania":1951,
+		"Prelozene":"ano"
+		},
+		{	
+		"ID_autora":2,
+		"Autor":"John Wyndham",
+		"ID_knihy":2.2,
+		"Nazov":"Votrelci z hlbin",
+		"Orig_nazov":"The Kraken Wakes",
+		"Rok_orig_vydania":1953,
+		"Prelozene":"ano"
+		},
+		{	
+		"ID_autora":2,
+		"Autor":"John Wyndham",
+		"ID_knihy":2.3,
+		"Nazov":"Kukly",
+		"Orig_nazov":"The Chrysalids",
+		"Rok_orig_vydania":1955,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":2,
+		"Autor":"John Wyndham",
+		"ID_knihy":2.4,
+		"Nazov":"Midwichske kukacky",
+		"Orig_nazov":"The Midwich Cuckoos",
+		"Rok_orig_vydania":1957,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":3,
+		"Autor":"Stephan Wul",
+		"ID_knihy":3.1,
+		"Nazov":"Nork",
+		"Orig_nazov":"Niourk",
+		"Rok_orig_vydania":1957,
+		"Prelozene":"ano"
+		},
+		{	
+		"ID_autora":3,
+		"Autor":"Stephan Wul",
+		"ID_knihy":3.2,
+		"Nazov":"Fantasticka planeta",
+		"Orig_nazov":"Oms by the Dozen",
+		"Rok_orig_vydania":1957,
+		"Prelozene":"nie"
+		},
+		{
+		"ID_autora":4,
+		"Autor":"Robert Anson Heinlein",
+		"ID_knihy":4.1,
+		"Nazov":"Matuzalemove deti",
+		"Orig_nazov":"Methuselah's Children",
+		"Rok_orig_vydania":1958,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":4,
+		"Autor":"Robert Anson Heinlein",
+		"ID_knihy":4.2,
+		"Nazov":"Hviezdna pechota",
+		"Orig_nazov":"Starship Troopers",
+		"Rok_orig_vydania":1959,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":4,
+		"Autor":"Robert Anson Heinlein",
+		"ID_knihy":4.3,
+		"Nazov":"Kompletni historie budoucnosti",
+		"Orig_nazov":"The Past Through Tomorrow",
+		"Rok_orig_vydania":1967,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":4,
+		"Autor":"Robert Anson Heinlein",
+		"ID_knihy":4.4,
+		"Nazov":"Mesiac je drsna milenka",
+		"Orig_nazov":"The Moon is A Harsh Mistress",
+		"Rok_orig_vydania":1966,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":5,
+		"Autor":"Stanislav Lem",
+		"ID_knihy":5.1,
+		"Nazov":"Solaris",
+		"Orig_nazov":"Solaris",
+		"Rok_orig_vydania":1961,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":6,
+		"Autor":"William Hope Hodgson",
+		"ID_knihy":6.1,
+		"Nazov":"Dom na rozhrani",
+		"Orig_nazov":"The House on the Borderland",
+		"Rok_orig_vydania":1908,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":6,
+		"Autor":"William Hope Hodgson",
+		"ID_knihy":6.2,
+		"Nazov":"Nocna krajina",
+		"Orig_nazov":"The Night Land",
+		"Rok_orig_vydania":1912,
+		"Prelozene":"nie"
+		},
+		{
+		"ID_autora":7,
+		"Autor":"Simon Clark",
+		"ID_knihy":7.1,
+		"Nazov":"Noc Trifidov",
+		"Orig_nazov":"The Night of the Triffids",
+		"Rok_orig_vydania":2001,
+		"Prelozene":"nie"
+		},
+		{
+		"ID_autora":8,
+		"Autor":"Jack Finney",
+		"ID_knihy":8.1,
+		"Nazov":"Invazia zlodejov tiel",
+		"Orig_nazov":"Invasion of the Body Snatchers",
+		"Rok_orig_vydania":1955,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":9,
+		"Autor":"Dan Simmons",
+		"ID_knihy":9.1,
+		"Nazov":"Hyperion",
+		"Orig_nazov":"Hyperion",
+		"Rok_orig_vydania":1989,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":9,
+		"Autor":"an Simmons",
+		"ID_knihy":9.2,
+		"Nazov":"Pad Hyperionu",
+		"Orig_nazov":"Fall of the Hyperion",
+		"Rok_orig_vydania":1990,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":9,
+		"Autor":"Dan Simmons",
+		"ID_knihy":9.3,
+		"Nazov":"Endymion",
+		"Orig_nazov":"Endymion",
+		"Rok_orig_vydania":1996,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":9,
+		"Autor":"Dan Simmons",
+		"ID_knihy":9.4,
+		"Nazov":"Vzostup Endymionu",
+		"Orig_nazov":"The Rise of Endymion",
+		"Rok_orig_vydania":1997,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":10,
+		"Autor":"Jevgenij Ivanovic Zamjatin",
+		"ID_knihy":10.1,
+		"Nazov":"My",
+		"Orig_nazov":"My",
+		"Rok_orig_vydania":1920,
+		"Prelozene":"ano"
+		},
+		{	
+		"ID_autora":11,
+		"Autor":"Aldous Huxley",
+		"ID_knihy":11.1,
+		"Nazov":"Prekrasny novy svet",
+		"Orig_nazov":"Brave New World",
+		"Rok_orig_vydania":1932,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":12,
+		"Autor":"George Orwell",
+		"ID_knihy":12.1,
+		"Nazov":1984,
+		"Orig_nazov":"Nineteen Eighty-Four",
+		"Rok_orig_vydania":1949,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":13,
+		"Autor":"Liou Cch'-sin",
+		"ID_knihy":13.1,
+		"Nazov":"Problem troch telies",
+		"Orig_nazov":"The three-body problem",
+		"Rok_orig_vydania":2008,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":13,
+		"Autor":"Liou Cch'-sin",
+		"ID_knihy":13.2,
+		"Nazov":"Temny les",
+		"Orig_nazov":"The Dark Forest",
+		"Rok_orig_vydania":2008,
+		"Prelozene":"ano"
+		},
+		{
+		"ID_autora":13,
+		"Autor":"Liou Cch'-sin",
+		"ID_knihy":13.3,
+		"Nazov":"Spomienka na Zem",
+		"Orig_nazov":"Deaths's End",
+		"Rok_orig_vydania":2010,
+		"Prelozene":"ano"
+		}
+		]
+	}
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;main ()&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;sucin = 1&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<for text="&#34;int i=1; i &#60;= 15; i += 2 &#34;" comment="" color="FFFFFF">
+ <qFor>
+
+<instruction text="&#34;sucin *= i&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qFor>
+</for>
+<instruction text="&#34;OUTPUT Sucin neparnych cisel v intervale od 1 do 15 je: &#34;&#34; + sucin&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>

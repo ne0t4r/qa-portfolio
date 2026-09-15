@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_06_l_11_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_06_l_11</parent>
+    <text>
+    <![CDATA[
+       Module facade pattern focuses on 
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+          improving maintainability
+        ]]>
+        </option>
+        <option key="two" >
+        <![CDATA[
+          improving portability
+        ]]>
+        </option>
+        <option key="three" >
+        <![CDATA[
+          improving extensibility
+        ]]>
+        </option>
+        <option key="four" correct="true" >
+        <![CDATA[
+          decreasing complexity
+        ]]>
+        </option>
+    </options>
+</quiz>

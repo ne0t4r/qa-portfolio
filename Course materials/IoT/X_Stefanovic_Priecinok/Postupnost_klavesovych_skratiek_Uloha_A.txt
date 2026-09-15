@@ -1,0 +1,27 @@
+ÚLOHA A)
+======================
+[WIN]+I
+[TAB] (použi viackrát podľa potreby) - upravene			
+[ŠÍPKA DOLE] (použi viackrát podľa potreby)
+[ENTER]
+[TAB] (použi viackrát podľa potreby)
+[ENTER]
+[doplň z možností] (použi viackrát podľa potreby) - navyse
+[doplň z možností] - navyse
+[WIN]+D
+[CTRL]+SHIFT+N
+napíš názov priečinku
+[ENTER] (použi viackrát podľa potreby)
+[CTRL]+F10
+[ENTER] (použi viackrát podľa potreby)
+[ŠÍPKA DOLE]
+[ENTER] (použi viackrát podľa potreby)
+[doplň z možností]
+napíš názov súboru
+[ENTER] (použi viackrát podľa potreby)
+[CTRL]+V
+[CTRL]+S
+[ALT]+F4
+[ALT]+F4
+[ALT]+TAB (použi viackrát podľa potreby)
+[ALT]+F4

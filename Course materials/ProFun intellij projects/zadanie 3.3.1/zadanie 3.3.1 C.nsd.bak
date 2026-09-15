@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;main ()&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;cislo = 1&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<while text="&#34;cislo &#62; 10&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<instruction text="&#34;OUTPUT cislo &#34;&#34;  &#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;cislo + 1&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qWhile>
+</while>
+ </children>
+</root>

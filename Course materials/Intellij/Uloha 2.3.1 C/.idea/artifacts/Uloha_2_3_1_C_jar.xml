@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Uloha 2.3.1 C:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Uloha_2_3_1_C_jar</output-path>
+    <root id="archive" name="Uloha 2.3.1 C.jar">
+      <element id="module-output" name="Uloha 2.3.1 C" />
+    </root>
+  </artifact>
+</component>

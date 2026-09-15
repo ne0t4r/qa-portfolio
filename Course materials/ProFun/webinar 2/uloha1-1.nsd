@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;main ()&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;INPUT stranaA, stranaB, stranaC&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<call text="&#34;overTrojnerovnost(stranaA , stranaB , stranaC)&#34;" comment="" color="FFFFFF"></call>
+ </children>
+</root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_03_l_08_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_03_l_08</parent>
+    <text>
+    <![CDATA[
+        Physical layers pattern states that... 
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+            we should physically separate unrelated modules following loose coupling principle.
+        ]]>
+        </option>
+
+        <option key="two" >
+        <![CDATA[
+            we should better allocate classes in modules following cohesion principle.
+        ]]>
+        </option>
+
+        <option key="three" >
+        <![CDATA[
+            we should physically separate data access layer with domain model from service layer.
+        ]]>
+        </option>
+		
+		<option key="four" correct="true" >
+        <![CDATA[
+            module dependencies should not break logical layering.
+        ]]>
+        </option>
+    </options>
+</quiz>

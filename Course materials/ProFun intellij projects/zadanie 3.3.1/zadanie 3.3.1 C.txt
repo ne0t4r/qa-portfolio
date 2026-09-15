@@ -1,0 +1,9 @@
+zadanie 3.3.1 C
+
+uloz pociatocne cislo sa rovna 1 a uloz do premennej cislo
+vypis cislo a vypocitaj cislo + 1 a opakuj kym cislo nieje vacsie ako 10
+	
+	
+
+
+

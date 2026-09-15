@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;main ()&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;INPUT rok&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<call text="&#34;vysledok = zistiPrestupnost(rok)&#34;" comment="" color="FFFFFF"></call>
+<alternative text="&#34;vysledok = true&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;OUTPUT &#34;&#34;Rok je prestupny (ma 366 dni)&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+<instruction text="&#34;OUTPUT &#34;&#34;Rok nie je priestupny (ma 365 dni)&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qFalse>
+</alternative>
+ </children>
+</root>

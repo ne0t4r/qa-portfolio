@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_02_l_06_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_02_l_06</parent>
+    <text>
+    <![CDATA[
+        What principle focuses on dependencies between modules?
+    ]]>
+    </text>
+    <options>
+        <option key="one">
+        <![CDATA[
+            Designing Highly Cohesive Modules
+        ]]>
+        </option>
+
+        <option key="two" correct="true" >
+        <![CDATA[
+            Designing Loosely Coupled Modules
+        ]]>
+        </option>
+
+        <option key="three" >
+        <![CDATA[
+            Dependency inversion principle
+        ]]>
+        </option>
+
+		<option key="four">
+        <![CDATA[
+            Separation of domain-independent from domain-dependent modules
+        ]]>
+        </option>
+		
+		<option key="five">
+        <![CDATA[
+            Breakdown of monoliths into fined-grained modules while all are still usable
+        ]]>
+        </option>
+		
+    </options>
+</quiz>

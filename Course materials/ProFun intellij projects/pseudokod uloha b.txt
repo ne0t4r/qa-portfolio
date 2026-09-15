@@ -1,0 +1,24 @@
+uloha B
+
+zadaj jedno 5-ciferne cislo
+uloz ho do premennej cislo0
+
+vypocitaj cifraMod1 = cislo0 MOD 10000
+cislo1 = cislo0 - cifraMod1
+cifra1 = cislo1 / 10000
+
+vypocitaj cifraMod2 = cislo0 MOD 1000
+cislo2 = (cislo0 - cifraMod2) - cislo1
+cifra2 = cislo2 / 1000
+
+vypocitaj cifraMod3 = cislo0 MOD 100
+cislo3 = (cislo0 - cifraMod3)-(cislo1 + cislo2)
+cifra3 = cislo3 / 100
+
+vypocitaj cifraMod4 = cislo0 MOD 10
+cislo4 = (cislo0 - cifraMod4)-(cislo3 + cislo2 + cislo1)
+cifra4 = cislo4 / 10
+
+vypocitaj cifra5 = (cislo0 - cislo4)-(cislo3 + cislo2 + cislo1)
+
+vypis cifra1 "   " cifra2 "   " cifra3 "   " cifra4 "   " cifra5

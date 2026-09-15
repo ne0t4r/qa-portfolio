@@ -1,0 +1,9 @@
+1)		\bIB.\b|\bI.M\b|\b.BM\b
+2)		\bločnosť\b
+3)		\bZamest 	\bzamest		
+4)		\b\s+
+5)		^\s\n
+6)		^
+7)		$
+8)		\b(\w+)\s+\1\b
+

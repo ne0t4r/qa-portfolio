@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;zistiSucin(x, y)&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;vysledok = x * y &#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;RETURN vysledok&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>

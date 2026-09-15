@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_07_l_12_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_07_l_12</parent>
+    <text>
+    <![CDATA[
+       What statement is not true?
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+           Levelization helps in reusing modules by identifying  all subtrees the reusable candidate depends on.
+        ]]>
+        </option>
+        <option key="two" >
+        <![CDATA[
+           Levelization helps in testing modules by identifying modules without complex dependency structures in lower-level modules.
+        ]]>
+        </option>
+        <option key="three" correct="true" >
+        <![CDATA[
+         Levelize modules pattern provides not only identifying design flaws in modular structures but also provides guidelines saying what structural changes you should do.
+        ]]>
+        </option>
+        <option key="four"   >
+        <![CDATA[
+          Levelization helps in reducing maintenance costs by revealing complex dependency structures in lower-level modules.
+        ]]>
+        </option>
+    </options>
+</quiz>

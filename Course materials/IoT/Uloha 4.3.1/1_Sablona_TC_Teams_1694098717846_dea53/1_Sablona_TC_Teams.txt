@@ -1,0 +1,127 @@
+===================================================
+A1) Ako vytvoriť tím
+===================================================
+
+Klikni na [Pripojiť sa alebo vytvoriť tím]
+
+Klikni na [Vytvoriť tím]
+
+Klikni na [Úplne od začiatku]
+
+Klikni na [Verejný]
+
+Napíš názov tímu
+
+Uveď popis
+
+Klikni na [Vytvoriť]
+
+Napíš meno nového člena tímu do poľa s názvom [Začnite písať meno alebo skupinu] 
+
+Klikni na tohto nového člena tímu
+
+Klikni na [Pridať]
+
+Klikni na [Zavrieť]
+
+===================================================
+A2) Ako vytvoriť kanál
+===================================================
+
+Klikni na tri bodky v ľavom menu
+
+Klikni na [Pridať kanál] 
+
+Napíš názov kanálu do poľa s názvom [Názov kanálu]
+
+Uveď popis kanálu do poľa s názvom [Popis (voliteľné)]
+
+Klikni na [Pridať]
+
+===================================================
+A3) Ako naplánovať stretnutie v Kalendári
+===================================================
+
+Klikni na [Kalendár]
+
+Klikni na [Nová schôdza]
+
+Napíš názov do poľa s názvom [Pridajte názov]
+
+Napíš meno daného účastníka do poľa [Pridajte požadovaných účastníkov]
+
+Klikni na tohto účastníka
+
+Napíš názov svojho kanála do poľa [Pridajte kanál] 
+
+Klikni na tento kanál
+
+Klikni na [Zobraziť ako: Nemám čas]
+
+Vyber možnosť [K dispozícií]
+
+Klikni na možnosť [Uložiť]
+
+===================================================
+A4) Ako uskutočniť videohovor a spraviť videozáznam
+===================================================
+
+V sekcii Kalendár klikni na práve vytvorenú schôdzu
+
+Klikni na [Pripojiť sa]
+
+Klikni na [Propojiť sa teraz]
+
+Klikni na možnosť [Ďalšie možnosti]
+
+Klikni na [Zaznamenať a prepísať]
+
+Klikni na [Spustiť nahrávanie]
+
+Klikni na [Zdielať]
+
+Klikni na Obrazovka
+
+Klikni na možnosť [Ĺudia]
+
+Klikni na možnosť [Stlmiť všetkých]
+
+Klikni na možnosť [Kamera] (Kamera je odteraz zapnutá)
+
+Podrž myš na možnosti Kamera
+
+Po zobrazení okna klikni na možnosť [Rozmazať pozadie]
+
+Klikni na možnosť [Kamera]
+
+Klikni na možnosť [Pozadia]
+
+Klikni na možnosť [Kamera] (kamera je odteraz vypnutá)
+
+Vyber ľubovoľný filter pozadia
+
+Klikni na možnosť [Kamera]
+
+Klikni na [Prihlásiť]
+
+Klikni na možnosť [Ďalšie]
+
+Klikni na [Zaznamenať a prepísať]
+
+Klikni na [Ukončiť nahrávanie]
+
+Klikni na [Zastaviť zdielanie]
+
+Klikni na [Odísť]
+
+===================================================
+A5) Ako stiahnuť prezenčnú listinu
+===================================================
+
+Klikni na [Tímy]
+
+Klikni na svoj tím
+
+Klikni na svoj kanál
+
+Klikni na [Zostava o účasti]

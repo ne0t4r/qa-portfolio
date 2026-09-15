@@ -1,0 +1,15 @@
+zadanie 3.3.1 B
+
+zadaj pocet odpracovanych hodin a uloz do premennej odpracovaneHodiny
+ak su odpracovaneHodiny -1 ukonci program
+zadaj hodinovu sadzbu a uloz do premennej hodinovaSadzba
+ak su odpracovane hodiny <= 40 vypocitaj tyzdennaMzda = (odpracovaneHodiny * hodinovaSadzba)
+vypis tyzdenna mzda a opakuj
+ak su odpracovane hodiny > 40 vypocitaj nadcasy = ((odpracovaneHodiny - 40) * hodinovaSadzba) * 0,5
+vypocitaj tyzdennaMzda2 = (odpracovaneHodiny * hodinovaSadzba) + nadcasy
+vypis tyzdennaMzda2 a opakuj
+
+
+	
+
+

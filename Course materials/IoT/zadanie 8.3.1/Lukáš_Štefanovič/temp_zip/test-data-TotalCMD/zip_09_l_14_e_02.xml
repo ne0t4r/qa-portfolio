@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_09_l_14_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_09_l_14</parent>
+    <text>
+    <![CDATA[
+       Modules independent on context and environment increase especially
+    ]]>
+    </text>
+    <options>
+        <option key="one" >
+        <![CDATA[
+         reuse
+        ]]>
+        </option>
+        <option key="two" correct="true" >
+        <![CDATA[
+         extensibility
+        ]]>
+        </option>
+        <option key="three"  >
+        <![CDATA[
+         maintenance
+        ]]>
+        </option>
+        <option key="four"   >
+        <![CDATA[
+          testability
+        ]]>
+        </option>
+    </options>
+</quiz>

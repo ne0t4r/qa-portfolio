@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="main()" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;INPUT obrat&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<while text="&#34;obrat != -1&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<instruction text="&#34;mzda = (obrat * 9 /100)+200&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;OUTPUT mzda&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;INPUT obrat&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qWhile>
+</while>
+ </children>
+</root>

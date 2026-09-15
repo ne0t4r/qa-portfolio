@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;zistiRozdiel(x, y)&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;vysledok = 0&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<alternative text="&#34;x &#62; y&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;vysledok = x - y &#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+<alternative text="&#34;x &#60; y&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;vysledok = x - y &#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+ </qFalse>
+</alternative>
+<instruction text="&#34;RETURN vysledok&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>

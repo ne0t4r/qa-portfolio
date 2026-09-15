@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <key>mod_s_02_l_05_e_02</key>
+    <name>Exercise 02</name>
+    <parent>mod_s_02_l_05</parent>
+    <text>
+    <![CDATA[
+        What statement is not true?
+    ]]>
+    </text>
+    <options>
+        <option key="one" correct="true" >
+        <![CDATA[
+            Dependency injection with creational patterns helped a lot to address explicit dependencies.
+        ]]>
+        </option>
+
+        <option key="two" >
+        <![CDATA[
+            Modules should expose stable interfaces by definition.
+        ]]>
+        </option>
+
+        <option key="three" >
+        <![CDATA[
+            Hiding a lot of public classes at the module level can be achieved by improved encapsulation.
+        ]]>
+        </option>
+
+		<option key="four">
+        <![CDATA[
+            Basic trait of the component called module is its reusability.
+        ]]>
+        </option>
+    </options>
+</quiz>

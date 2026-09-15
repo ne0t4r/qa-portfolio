@@ -1,0 +1,8 @@
+uloha c.3
+
+nacitaj obrat a uloz do premennej obrat
+
+opakuj pokial obrat je rozna ako -1
+	vypocitaj tyzdennu mdzu a uloz do premennej mzda (mzda = ((obrat * 9 /100)+200)
+	vypis tyzdennu mzdu
+	nacitaj obrat a uloz do premennej obrat

@@ -1,0 +1,44 @@
+ÚLOHA D)
+======================
+[WIN]
+napíš názov hocijakého webového prehliadača
+[ENTER]
+[WIN]
+napíš názov standalone aplikácie Teams
+[ENTER]
+[WIN]
+napíš názov hocijakého grafického softvéru
+[ENTER]
+[WIN]+D
+[WIN]+TAB
+[WIN]+SHIFT+S
+[TAB] (použi viackrát podľa potreby)
+[ENTER]
+[ALT]+TAB (použi viackrát podľa potreby)
+[CTRL]+V
+[CTRL]+S
+napíš názov obrázka .jpeg
+[TAB] (použi viackrát podľa potreby)
+[ŠÍPKA DOLE] (použi viackrát podľa potreby)
+[ENTER] (potvrď zvolenie Pracovnej plochy)
+[TAB] (použi viackrát podľa potreby)
+[ENTER]
+[ALT]+F4
+[WIN]+D
+[ŠÍPKA DOLE]
+[CTRL]+X
+[ŠÍPKA DOLE]
+[ENTER]
+[CTRL]+V
+[ALT]+F4
+(nasledujúca dvojica kláves vyberie a zatvorí príkazový riadok:)
+[ALT]+TAB (použi viackrát podľa potreby)
+[ALT]+F4
+(nasledujúca dvojica kláves vyberie a zatvorí otvorený Word:)
+[ALT]+TAB (použi viackrát podľa potreby)
+[ALT]+F4
+(nasledujúca dvojica kláves vyberie a zatvorí Systémové informácie:)
+[ALT]+TAB (použi viackrát podľa potreby)
+[ALT]+F4
+(klávesa na uzamknutie počítača:)
+[WIN]+L

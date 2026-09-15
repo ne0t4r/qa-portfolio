@@ -1,0 +1,11 @@
+zadanie 3.3.1 A
+
+zadaj vysku uveru a uloz do premennej vyskaUveru
+	opakuj kym vyskaUveru je rozna ako -1
+	
+zadaj vysku urokovej sadzby a uloz do premennej urokovaSadzba
+zadaj obdobie viazanosti v dnoch a uloz do premennej obdobieViazanosti
+vypocitaj poplatky za ( (vyskaUveru * urokovaSadzba * obdobieViazanosti) / 365) a uloz do premennej poplatky
+vypis poplatky
+
+

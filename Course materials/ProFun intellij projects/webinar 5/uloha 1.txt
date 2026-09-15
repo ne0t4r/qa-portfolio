@@ -1,0 +1,10 @@
+uloha c.1
+
+nacitaj od uzivatela vstup a zapis do premennej N
+inicializuj premennu sucet na 0 (sucet = 0)
+
+opakuj N - krat
+	nacitaj od uzivatela cele cislo a zapis do premennej  cislo
+	premmenu cislo pripocitaj do suctu (sucet = sucet + cislo)
+	
+vypis na konzolu sucet
