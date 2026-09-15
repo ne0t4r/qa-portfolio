@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="Webinar5" soapui-version="5.7.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="Info o krajinách">C:/Users/lukas/Documents/Info-o-krajinách-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>

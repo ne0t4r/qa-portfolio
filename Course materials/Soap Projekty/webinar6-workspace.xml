@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="webinar6" soapui-version="5.7.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="CountryInfoService">D:/My documents/ITvKurze/SWTesting/CountryInfoService-soapui-project.xml</con:project>
+  <con:project name="tempconvert">D:/My documents/ITvKurze/SWTesting/tempconvert-soapui-project.xml</con:project>
+</con:soapui-workspace>

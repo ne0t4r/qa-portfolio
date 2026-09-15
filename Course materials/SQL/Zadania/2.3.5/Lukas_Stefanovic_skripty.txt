@@ -1,0 +1,2 @@
+1. CREATE DATABASE Lukas_Stefanovic_projekt_DB;
+5. DROP DATABASE IF EXISTS Lukas_Stefanovic_projekt_DB;

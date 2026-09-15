@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia20/ulohaB/zadanie_20.3.1B/pom.xml" />
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia20/ulohaB/zadanie_20.3.1B2/pom.xml" />
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia20/ulohaC/zadanie_20.3.1C/pom.xml" />
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia21/zadanie_21.3.1/pom.xml" />
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia22/zadanie_22.3.1/pom.xml" />
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia27/zadanie_27.3.1/pom.xml" />
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia28/zadanie_28.3.1/pom.xml" />
+        <option value="$PROJECT_DIR$/ATP_Stefanovic/neprojektove-ulohy/Lekcia29/zadanie_29.3.1/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

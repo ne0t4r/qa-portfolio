@@ -1,0 +1,8 @@
+Prvy DROP
+Tabulku vymazalo kedze tabulka bola vytvorena a nevypisalo ziadnu chybu
+
+Druhy DROP
+Tabulka uz bola vymazana preto studio vypisalo chybu. ('Cannot drop the table 'Categories', because it does not exist or you do not have permission.')
+
+Treti DROP a IF EXISTS
+IF EXISTS je vlastne podmienka pre vymazanie tzn. ze prikaz vykona iba ak tato tabulka existuje teda je pritomna preto nevypisalo ziadnu chybu.

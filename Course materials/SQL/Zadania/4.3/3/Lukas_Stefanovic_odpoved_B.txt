@@ -1,0 +1,1 @@
+Pretože tabulka Stores mala nastavene IDENTITY pre stlpec StoreID, potom sme zaznamy vymazali a nasledne znova vlozili a kedze sme IDENTITY pre tento stlpec neresetovali tak preto pouzilo nasledujuce poradie od 4.

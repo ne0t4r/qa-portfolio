@@ -1,0 +1,1 @@
+Preto tabulka Stores bola cez cudzi kluc nastavena ako rodicovska a tabulka Employees ako podriadena tabulka a koli tomuto prepojenie tabulku Stores sa nedala vymazat.

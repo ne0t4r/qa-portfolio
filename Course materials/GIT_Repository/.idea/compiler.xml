@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zadanie_28.3.1" />
+        <module name="1" />
+        <module name="zadanie_22.3.1" />
+        <module name="zadanie_20.3.1B2" />
+        <module name="zadanie_20.3.1C" />
+        <module name="1 (1) (org.example)" />
+        <module name="zadanie_29.3.1" />
+        <module name="zadanie_20.3.1B" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

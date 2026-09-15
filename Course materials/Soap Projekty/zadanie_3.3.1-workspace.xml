@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="zadanie_5.3.1" soapui-version="5.7.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="calculator">D:/My documents/ITvKurze/SWTesting/zadanie 5.3.1/zadanie531-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>
